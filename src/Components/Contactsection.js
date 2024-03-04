@@ -1,4 +1,5 @@
 import React from "react";
+import {Linking} from "react-native";
 
 
 export default function App() {
@@ -14,8 +15,12 @@ export default function App() {
 <p>Message:</p>
 <textarea placeholder="Write Here...." rows="5" className="contact-input-area"></textarea>
 
-<button className="secondary-button" Style="width:170px; margin-top:1rem">Submit</button>
+<button className="secondary-button" Style="width:170px; margin-top:1rem" onClick={() => openEmail()}>Submit</button>
      </form>
 </div>
   );
+}
+
+const openEmail = () => {
+  Linking.openURL("mailto: the.group.pay@gmail.com")
 }

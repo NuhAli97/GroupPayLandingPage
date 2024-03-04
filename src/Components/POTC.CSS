@@ -1,0 +1,347 @@
+
+/*---------Partner---------*/
+.partner-banner-container {
+    position: relative;
+    display: flex;
+    padding-top: 3rem;
+    background-image: url("../src/Assets/Background3.png");
+    background-size: cover;
+    
+    
+  }
+  .partner-bannerImage-container {
+    position: absolute;
+    top: -100px;
+    right: -170px;
+    z-index: -2;
+    max-width: 700px;
+  }
+  .partner-container{
+  height: 1450px;
+  
+  }
+  
+  .partner-text-section {
+   
+    margin-top: 60px;
+    margin-left: 90px;
+    
+  }
+  .partner-text-section p{
+   
+    margin-left: 10px !important;
+  }
+  
+  .Partner-form{
+    background-color: #d1d1d4;
+    padding: 5rem;
+    height: 1470px;
+    max-width: 800px;
+    margin-left: 150px;
+    border-radius: 2rem;
+  }
+  
+  
+  /*----------Orginizer-----------*/
+  .Carousel{
+    margin-top: 150px !important;
+    padding:1.5rem;
+   
+  }
+  .Carousel h2,p{
+   text-align: center !important;
+  }
+  .OrgContainer{
+   margin-bottom: 300px;
+  
+  }
+  #conference-timeline {
+    position: relative;
+    max-width: 920px;
+    width: 100%;
+    margin-top:100px;
+    margin-left: 350px;
+  }
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    display: table;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #00b0bd;
+    padding: 15px 23px;
+    color: #fff;
+    max-width: 5%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #conference-timeline .conference-center-line {
+    position: absolute;
+    width: 3px;
+    height: 71%;
+    top: 220px;
+    left: 50%;
+    margin-left: -2px;
+    background: #000000;
+    z-index: -1;
+  }
+  #conference-timeline .conference-timeline-content {
+    padding-top: 67px;
+    padding-bottom: 67px;
+  }
+  .timeline-article {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 44%;
+    width: 100%;
+  }
+  .timeline-article .timeline-author {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+    text-align: right;
+  }
+  .timeline-article .content-left {
+    position: relative;
+    width: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  }
+  .timeline-article .content-right {
+    position: relative;
+    width: auto;
+  
+   
+  
+    padding-bottom: 100px;
+  }
+  .timeline-article p {
+    margin: 0 0 0 0px;
+    padding: 0;
+    font-weight: 400;
+    color: #242424;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    text-align: left !important;
+  }
+  
+  .timeline-article .content-left-container {
+    float: left;
+  }
+  .timeline-article .content-right-container {
+    float: right;
+  }
+  .timeline-article .content-left:before,
+  .timeline-article .content-right:before{
+    position: absolute;
+    top: 20px;
+    font-size: 3px;
+    font-family: "FontAwesome";
+    color: #fff;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0da";
+    right: -8px;
+  }
+  .timeline-article .content-right:before {
+    content: "\f0d9";
+    left: -8px;
+  }
+  .timeline-article .meta-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left: -7px;
+    color: #fff;
+    border-radius: 100%;
+    background: #000000;
+  }
+  
+  
+  #org-form-fname{
+    width:350px;
+    float: left;
+  
+    
+  }
+  #org-form-lname{
+    width:350px;
+    float: right;
+  
+  }
+  #org-form-email{
+    float: left;
+    width:350px;
+    
+  }
+  
+  #org-form-phone{
+    width:350px;
+    float: right;
+    
+  }
+  
+  .org-submit-button{
+      padding: 0.9rem 1.75rem;
+      background-color: rgb(0, 0, 0);
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: #ffffff;
+      transition: 0.2s;
+      width: 200px;
+    
+  }
+  #org-container{
+    
+    background-color: #eeeeee;
+    height: 390px;
+    max-width: 100%;
+    margin-top: -250px;
+    
+  }
+  #org2-form{
+    margin-top: 180px;
+    margin-left: 240px;
+   
+    
+    
+  }
+  
+  #org-container.org-form{
+  padding-left: 100px;
+  }
+  
+  .org-ButtonHolder button{
+  
+  
+  clear: both;
+  
+  }
+  .org2-form-inputs{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    margin-right: 760px;
+    padding-top: 100px;
+  }
+  
+  /*===== // Vertical Timeline =====*/
+  
+  /*===== Resonsive Vertical Timeline =====*/
+  @media only screen and (max-width: 830px) {
+    #conference-timeline .timeline-start,
+    #conference-timeline .timeline-end {
+      margin: 0;
+    }
+    #conference-timeline .conference-center-line {
+      margin-left: 0;
+      left: 25px;
+      margin-top: 3px;
+      height: 1250px;
+    }
+    #conference-timeline{
+     margin-left:0 !important;
+   
+      
+    }
+    .timeline-article .meta-date {
+      margin-left: 0;
+      left: 20px;
+    }
+    .timeline-article .content-left-container,
+    .timeline-article .content-right-container {
+      max-width: 100%;
+      width: auto;
+      float: none;
+      margin-left: 60px;
+      min-height: 53px;
+    }
+    .timeline-article .content-left-container {
+      margin-bottom: 20px;
+    }
+    .timeline-article .content-left,
+    .timeline-article .content-right {
+      margin-right: 25px;
+      min-height: 65px;
+    }
+  
+    .org-head-text{
+      width: auto;
+      font-size: 25px;
+      margin-left: 40px;
+    }
+    .org-sub-text{
+    
+      width: auto;
+      text-align: center;
+      font-size: 14px !important;
+      padding: 0rem 1rem 0rem 1rem;
+    }
+    .org-form{
+      max-width:100% !important;
+     margin: 0rem;
+     padding:1rem;
+    }
+    
+  #org-form-fname{
+    width:340px;
+    
+    
+  }
+  #org-form-lname{
+    width:340px;
+   
+  float: none;
+  
+  }
+  #org-form-email{
+    width:340px;
+   
+  }
+  #org-form-phone{
+    width:340px;
+    float: none;
+  
+  }
+  #org-phone-container{
+    float: none;
+   
+  }
+  .org-PhoneList{
+    width:340px !important;
+   margin-right: 0 !important;
+  
+  }
+  .org-submit-button{
+  align-content: center;
+   margin-left: 70px;
+  }
+  .org-ButtonHolder{
+   margin: 2rem 0rem 0rem 0rem !important;
+  }
+  }
+  @media only screen and (max-width: 400px) {
+    .timeline-article p {
+      margin: 0;
+    }
+    .timeline-article p span.article-number {
+      display: none;
+    }
+}  

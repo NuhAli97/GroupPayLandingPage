@@ -27,32 +27,37 @@ const AboutQatta = () => {
     },
   ];
   return (
-    <div className="aboutqatta-section-wrapper" id="AboutQatta" data-aos="fade-up">
+    <div
+      className="aboutqatta-section-wrapper"
+      id="AboutQatta"
+      data-aos="fade-up"
+    >
       <div className="aboutqatta-section-top">
-        <h1 className="primary-heading" Style="font-size:37px;">THE MOST NEEDED APPLICATION!</h1>
+        <h1 className="primary-heading" Style="font-size:37px;">
+          THE MOST NEEDED APPLICATION!
+        </h1>
         <p className="secondary-text">
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
           elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
         </p>
-     
-    
       </div>
-     
+
       <div className="aboutqatta-section-bottom">
         {AppInfo.map((data) => (
-         
-          <div className="aboutqatta-section-info" key={data.title}id="hover-underline-animation">
+          <div
+            className="aboutqatta-section-info"
+            key={data.title}
+            id="hover-underline-animation"
+          >
             <div className="info-boxes-img-container">
               <img src={data.image} alt="" />
-            </div >
+            </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
           </div>
         ))}
       </div>
-   
     </div>
-   
   );
 };
 

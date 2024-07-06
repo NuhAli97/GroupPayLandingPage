@@ -5,98 +5,86 @@ import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import Logo from "../Assets/Logo.png";
-import {FaTwitter, FaInstagram, FaLinkedin} from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
-   
-    <div className="main-footer">
-    <div className="footer-container">
+    <footer className="bg-gray-900 text-white py-10">
+      <div className="container mx-auto px-4 sm:px-0">
+        <div className="flex justify-around ">
+          {/* Column 1: Address */}
+          <div className="col-span-1 text-center ">
+            <h4 className="text-lg font-semibold mb-4">{t("Address")}</h4>
+            <ul className="space-y-2">
+              <li>{t("AlAhsa-Hofuf")}</li>
+            </ul>
+          </div>
 
-       <div className="row">
-        {/* Column1
-        <div className="col">
-          <h4>Opening Hours</h4>
-          <ui className="list-unstyled">
-             <p>Weekdays 8:00am-7:30pm</p>
-             <p>Weekends 8:00am-2:00pm</p>
-           </ui>
-        </div> */}
+          {/* Column 2: Contact Us */}
+          <div className="col-span-1 text-center ">
+            <h4 className="text-lg font-semibold mb-4">{t("Contact Us")}</h4>
+            <ul className="space-y-2">
+              <li>the.group.pay@gmail.com</li>
+            </ul>
+          </div>
 
-        {/* Column2 */}
-        <div className="col">
-          <h4>Address</h4>
-          <ui className="list-unstyled">
-             <p>AlAhsa-Hofuf</p>
-             {/* <h4>Opening Hours</h4>
-             <p>Weekdays 8:00am-7:30pm</p>
-             <p>Weekends 8:00am-2:00pm</p> */}
-         </ui>
-         </div>
+          {/* Column 3: Join us */}
+          <div className="col-span-1 text-center ">
+            <h4 className="text-lg font-semibold mb-4">{t("Join us")}</h4>
+            <ul className="space-y-2">
+              <li>{t("Become a Partner")}</li>
+            </ul>
+          </div>
 
-        {/* Column3 */}
-        <div className="col">
-          <h4>Contact</h4>
-         <ui className="list-unstyled">
-           <p>the.group.pay@gmail.com</p>
-            {/* <p>013-888-888</p> */}
-            {/* <h4>News</h4>
-            <h4>FAQs</h4> */}
-          </ui>
+          {/* Column 4: Social Media */}
+          <div className="col-span-1 text-center ">
+            <h4 className="text-lg font-semibold mb-4">{t("Follow us")}</h4>
+            <div className="flex justify-center">
+              <a
+                href="https://www.instagram.com/the.group.pay/?igsh=MXR0ZWNib3h4MXRhYQ%3D%3D"
+                className="text-2xl hover:text-purple-600"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/group-pay-04b03b2b7/"
+                className="text-2xl hover:text-purple-600"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://twitter.com/i/flow/login?redirect_after_login=%2FTheGroupPay"
+                className="text-2xl hover:text-purple-600"
+              >
+                <FaTwitter />
+              </a>
+            </div>
+          </div>
         </div>
 
-        {/* Column4 */}
-        <div className="col">
-          <h4>Join us</h4>
-         <ui className="list-unstyled">
-           <p>Become a Partner</p>
-            {/* <p>Become an Organizer</p> */}
-           
-          </ui>
+        <hr className="border-gray-700 my-8" />
+
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-center">
+          <div className="flex space-x-4">
+            <a href="/terms" className="hover:text-purple-600">
+              {t("Terms & Conditions")}
+            </a>
+            <a href="/privacy" className="hover:text-purple-600">
+              {t("Privacy")}
+            </a>
+            <div>
+              &copy;{new Date().getFullYear()} {t("All rights reserved")}
+            </div>
+          </div>
         </div>
-
-        {/* Column5
-        <div className="col">
-        
-         <ui className="list-unstyled">
-           <p>News</p>
-            <p>FAQs</p>
-          </ui>
-        </div> */}
-
       </div>
-
-
-
-
-
-      <hr /> 
-      
-      
-       <div className="row">
-       
-       <div className="col">
-          &copy;{new Date().getFullYear()} All rights reserved
-          </div>
-
-          <div className="col">
-          <a href="/terms">Terms & Conditions</a>
-          <a href="/privacy">Privacy</a>
-          </div>
-
-
-          <div className="col">
-        <a href="https://www.instagram.com/the.group.pay/?igsh=MXR0ZWNib3h4MXRhYQ%3D%3D"><FaInstagram></FaInstagram></a>
-        <a href="https://www.linkedin.com/in/group-pay-04b03b2b7/"><FaLinkedin></FaLinkedin></a>
-        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FTheGroupPay"><FaTwitter></FaTwitter></a>
-        </div>
-
-       </div> 
-
-    </div>
-  </div>
-
-
+    </footer>
   );
 };
 

@@ -1,11 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
   word-spacing: 0.2rem;
-
+width: 100%;
 }
+
+/* src/App.css */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+body.rtl {
+  direction: rtl;
+}
+
+
 
 
 
@@ -13,19 +29,12 @@
   height: 50% !important;
   width: 50% !important;
   margin-top: 15% !important;
-  margin-left: 25% !important;
   border-radius: 10px !important;
 }
 
 .logo {
-
-
-
-
   color: white;
   font-size: 30px;
-
-
 }
 
 .App {
@@ -43,7 +52,7 @@ body {
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color: #fff;
 }
 
 nav {
@@ -148,11 +157,11 @@ nav {
   justify-content: center;
   align-items: flex-start;
   margin-left: 370px;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 }
 
 .home-text-section p {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 
 }
 
@@ -166,7 +175,7 @@ nav {
   color: #423e3e;
   /* line-height: 5rem; */
   max-width: 600px;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 
 }
 
@@ -176,7 +185,7 @@ nav {
   /* line-height: 5rem; */
   max-width: 500px;
   margin-top: -90px;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 }
 
 .primary-text {
@@ -184,7 +193,7 @@ nav {
   max-width: 500px;
   color: #423e3e;
   margin: 1.5rem 0rem;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 
 }
 
@@ -195,7 +204,7 @@ nav {
   color: #ffffff;
   margin: 1.5rem 0rem;
   margin-bottom: 40px;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 }
 
 .secondary-text {
@@ -203,7 +212,7 @@ nav {
   max-width: 500px;
   color: #423e3e;
   margin: 1.5rem 0rem;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 }
 
 .secondary-button {
@@ -301,7 +310,7 @@ nav {
 .footer-container p,
 h4,
 a {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
 }
 
 .footer-container h4 {
@@ -392,7 +401,7 @@ a {
 
 .home-oranizer-left h1 {
   color: white;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
   padding-bottom: 1rem;
 }
 
@@ -400,7 +409,7 @@ a {
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
 
 .service-3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Tajawal", sans-serif;
   color: #8d97ad;
   font-weight: 300;
   max-width: 1000px;
@@ -822,14 +831,14 @@ a {
 }
 
 .contact-form-main-container p {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
   font-weight: 500;
 
 }
 
 .faq-form-container p {
   margin-bottom: 9px;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
   font-weight: 500;
 }
 
@@ -1040,7 +1049,7 @@ a {
     margin-top: 1rem;
     font-size: 27px;
     color: #423e3e;
-    font-family: "Montserrat", sans-serif !important;
+    font-family: "Tajawal", sans-serif !important;
   }
 
   .home-oranizer-wrapper {

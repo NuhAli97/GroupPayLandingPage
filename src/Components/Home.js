@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Counters from "../Components/Counters";
 import BannerImage from "../Assets/home-phone.png";
 import Apple from "../Assets/Apple.png";
@@ -9,6 +9,7 @@ import { FiArrowRight } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
+import JoinWaitingListPopup from "./JoinWaitingListPopup";
 
 const Home = () => {
   useEffect(() => {
@@ -19,6 +20,17 @@ const Home = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <div className="relative home-container w-full" id="Home">
       <HomeNavbar className="fixed top-0 left-0 w-full z-50" />
@@ -40,15 +52,45 @@ const Home = () => {
             )}
           </p>
           <div className="flex gap-5 mb-10 w-fit">
-            <a id="android" href="Android">
+            {/* <a id="android" href="Android">
               <img className="h-10 md:h-12 w-fit" src={Android} alt="Android" />
             </a>
             <a id="apple" href="Apple">
               <img className="h-10 md:h-12 w-fit" src={Apple} alt="Apple" />
+            </a> */}
+
+            <a
+              onClick={openPopup}
+              style={{
+                display: "inline-block",
+                padding: "10px 20px",
+                backgroundColor: "#6b46c1", // Purple background
+                color: "white", // White text
+                borderRadius: "4px", // Rounded corners
+                textAlign: "center", // Centered text
+                cursor: "pointer", // Pointer cursor on hover
+                textDecoration: "none", // Remove underline
+                border: "2px solid transparent", // Initial border (transparent)
+                transition:
+                  "background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease", // Smooth transition
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "transparent"; // Transparent background
+                e.currentTarget.style.color = "#6b46c1"; // Purple text
+                e.currentTarget.style.borderColor = "#6b46c1"; // Purple border
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#6b46c1"; // Original background color
+                e.currentTarget.style.color = "white"; // Original text color
+                e.currentTarget.style.borderColor = "transparent"; // Remove border color
+              }}
+            >
+              {t("Join The Waiting List")}
             </a>
           </div>
         </div>
       </div>
+      <JoinWaitingListPopup isOpen={isPopupOpen} onClose={closePopup} />
     </div>
   );
 };

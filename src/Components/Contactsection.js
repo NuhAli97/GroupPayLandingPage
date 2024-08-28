@@ -21,7 +21,7 @@ export default function App() {
     e.preventDefault(); // Prevent form submission
 
     const serviceID = "service_9x96oyc";
-    const templateID = "template_imuhf0n";
+    const templateID = "template_uw12slx";
     const userID = "3VDQC99rD3Cwcls8s";
 
     emailjs.send(serviceID, templateID, formData, userID).then(

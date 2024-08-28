@@ -77,7 +77,7 @@ const HomeNavbar = () => {
             className="text-white hover:text-purple-600"
             onClick={() => changeLanguage(i18n.language === "ar" ? "en" : "ar")}
           >
-            {i18n.language === "ar" ? "EN" : "AR"}
+            {i18n.language === "ar" ? "EN" : "ع"}
           </button>
           {/* <div className="navbar-menu-container">
             <HiOutlineBars3

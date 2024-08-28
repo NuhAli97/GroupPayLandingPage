@@ -30,10 +30,11 @@
   "Address":"العنوان",
   "AlAhsa-Hofuf":"الأحساء-الهفوف",
   "Join us":"انضم إلينا",
-  "Become a Partner":"كن شريكا",
+  "Join The Waiting List":"انضم إلى قائمة الإنتظار",
   "All rights reserved":"كل الحقوق محفوظة",
   "Terms & Conditions":"البنود و الأحكام",
   "Privacy":"الخصوصية",
-  "Email sent successfully":"تم إرسال البريد بنجاح"
+  "Email sent successfully":"تم إرسال البريد بنجاح",
+  "Failed to send email":"فشل إرسال الرساله"
 }
   
